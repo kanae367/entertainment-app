@@ -1,0 +1,91 @@
+@import '../variables.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+    padding: 0 24px;
+    padding-top: 48px;
+    align-items: center;
+}
+
+.title{
+    @include heading(32px);
+}
+
+.login{
+    width: 100%;
+    padding: 24px;
+    background-color: $bg-secondary;
+    border-radius: $border-radius;
+}
+
+.inputs{
+    border: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.input{
+    @include body;
+
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 0 16px;
+    color: white;
+    padding-bottom: 16px;
+
+    &::placeholder{
+        color: rgba(255,255,255, .5);
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: $bg-light;
+    }
+}
+
+.button{
+    @include body;
+
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    background-color: $error;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    margin-bottom: 24px;
+}
+
+.additional{
+    @include body;
+
+    text-align: center;
+    color: white;
+}
+
+.link{
+    @include body;
+
+    color: $error;
+    text-decoration: none;
+}
