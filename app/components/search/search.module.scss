@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.container{
+    display: flex;
+    margin: 24px 16px;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin: 33px 24px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin: 34px 36px;
+    }
+}
+
+.image{
+    flex-shrink: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.input{
+    @include body(16px);
+
+    background-color: transparent;
+    border: none;
+    flex-grow: 1;
+    color: #fff;
+    
+    &:focus{
+        outline: none;
+    }
+
+    &::placeholder{
+        color: rgba($color: #fff, $alpha: 0.5);
+    }
+
+    @media screen and (min-width: 768px) {
+        @include heading(24px);
+    }
+}
