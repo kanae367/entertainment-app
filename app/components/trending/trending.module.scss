@@ -1,0 +1,18 @@
+.trending{
+    margin-left: 16px;
+}
+
+.list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    overflow-x: scroll;
+}
+
+.title{
+    font-size: 20px;
+    letter-spacing: -.31px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 16px;
+}
