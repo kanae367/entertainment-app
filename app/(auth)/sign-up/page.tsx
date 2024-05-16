@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import classes from '../auth.module.scss';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Sign Up'
+}
 
 function SignUp(){
     return(

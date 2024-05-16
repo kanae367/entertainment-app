@@ -7,7 +7,10 @@ import "./globals.scss";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Entertainment App",
+  title: {
+    default: "Entertainment App",
+    template: "%s | Entertainment App"
+  },
   description: "Movies/Series Storage",
 };
 

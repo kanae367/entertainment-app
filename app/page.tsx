@@ -1,20 +1,15 @@
 import Trending from "./components/trending/Trending";
 import Recommended from "./components/recommended/Recommended";
-import { IMovie } from "./components/types";
-import fs from 'fs';
-import path from 'path'
+import getAllData from "./_lib/getAllData";
+import { Metadata } from "next";
 
-function getTrending(): IMovie[] {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
-  const jsonData: any =  fs.readFileSync(filePath);
-  const data = JSON.parse(jsonData);
-
-  return data;
-} 
+export const metadata: Metadata = {
+  title: "Home | Entertainment App"
+}
 
 export default function Home() {
-  const trending = getTrending().filter(item => item.isTrending === true);
-  const recommended = getTrending().filter(item => item.isTrending === false);
+  const trending = getAllData().filter(item => item.isTrending === true);
+  const recommended = getAllData().filter(item => item.isTrending === false);
 
   return (
     <main>
