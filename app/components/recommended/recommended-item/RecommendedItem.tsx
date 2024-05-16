@@ -8,8 +8,8 @@ const RecommendedItem = (props: IMovie) => {
     return(
         <li className={classes.item}>
             <Image 
-                width={240} 
-                height={140} 
+                width={164} 
+                height={164} 
                 className={classes.image} 
                 src={thumbnail.regular.small.replace('.', '')} 
                 alt={title}>

@@ -1,58 +1,51 @@
 @import '../../../variables.scss';
 
 .item{
+    width: 164px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    flex-shrink: 0;
 }
 
 .image{
-    width: 240px;
-    height: 140px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 
 .container{
-    position: absolute;
-    z-index: 5;
-    bottom: 16px;
-    padding-left: 16px;
-    color: white;
-}
-
-.image{
-    border-radius: 8px;
-}
-
-.bookmark{
-    position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 8px;
-    top: 8px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: rgba($color: $bg-main, $alpha: 0.5);
-    border: none;
-}
-
-.bookmarkImage{
-    width: auto;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .info{
-    margin-bottom: 4px;
     display: flex;
-    gap: 19px;
-    font-size: 12px;
+    gap: 16px;
+    font-size: 11px;
     font-weight: 300;
     color: rgba($color: #fff, $alpha: 0.75);
 }
 
 .category{
     display: flex;
-    gap: 6px;
-    align-items: center;
+    gap: 5px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.bookmark{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba($color: $bg-main, $alpha: 0.5);
+    border: none;
+    right: 8px;
+    top: 8px;
 }

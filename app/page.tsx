@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Trending from "./components/trending/Trending";
 import Recommended from "./components/recommended/Recommended";
 import { IMovie } from "./components/types";
@@ -18,7 +17,7 @@ export default function Home() {
   const recommended = getTrending().filter(item => item.isTrending === false);
 
   return (
-    <main className={styles.main}>
+    <main>
       <Trending trending={trending}></Trending>
       <Recommended recommended={recommended}></Recommended>
     </main>

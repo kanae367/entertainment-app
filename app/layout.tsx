@@ -8,7 +8,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Entertainment App",
-  description: "Movie/Series Storage",
+  description: "Movies/Series Storage",
 };
 
 export default function RootLayout({
