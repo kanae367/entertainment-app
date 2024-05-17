@@ -7,7 +7,7 @@ const Recommended = (props: {recommended: IMovie[]}) => {
 
     return(
         <div className={classes.recommended}>
-            <h2 className={classes.title}>Recommended</h2>
+            <h2 className={classes.title}>Recommended for you</h2>
             <ul className={classes.list}>
                 {recommended.map(item => <RecommendedItem key={item.title} {...item}/>)}
             </ul>
