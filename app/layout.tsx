@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <Header hidden={false}/>
-        <Search></Search>
+        {/* <Header hidden={true}/>
+        <Search></Search> */}
         {children}
         </body>
     </html>
