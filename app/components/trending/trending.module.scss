@@ -1,5 +1,13 @@
 .trending{
     margin-left: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 25px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 36px;
+    }
 }
 
 .list {
@@ -15,4 +23,8 @@
     font-weight: 300;
     color: #fff;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
 }

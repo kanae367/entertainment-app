@@ -10,6 +10,11 @@
 .image{
     width: 240px;
     height: 140px;
+
+    @media screen and (min-width: 768px) {
+        width: 470px;
+        height: 230px;
+    }
 }
 
 .container{
@@ -18,6 +23,11 @@
     bottom: 16px;
     padding-left: 16px;
     color: white;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 24px;
+        bottom: 24px;
+    }
 }
 
 .image{
@@ -36,6 +46,11 @@
     border-radius: 50%;
     background-color: rgba($color: $bg-main, $alpha: 0.5);
     border: none;
+
+    @media screen and (min-width: 768px) {
+        right: 24px;
+        top: 16px;
+    }
 }
 
 .bookmarkImage{
